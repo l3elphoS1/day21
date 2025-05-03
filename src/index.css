@@ -66,6 +66,38 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
   h1{
-    color:#e45182
+    color:#a2ceff
+  }
+
+  .light {
+    color: black;
+    background-color: #ffffff;  
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%;
+    height: 100%;
+    position: fixed; /* Ensures the div covers the entire viewport */
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .dark {
+    color: #ffffff;
+    background-color: #4a474e;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%;
+    height: 100%;
+    position: fixed; /* Ensures the div covers the entire viewport */
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
   }
 }
