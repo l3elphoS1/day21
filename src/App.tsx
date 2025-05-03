@@ -7,6 +7,7 @@ import List from "./components/List";
 import Dashboard  from "./pages/Dashboard";
 import Login from "./pages/Login";
 import BMI from "./pages/bmi";
+
 // ชื่อ Component ต้องขึ้นต้นด้วยตัวใหญ่
 // ชื่อไฟล์ Component ต้องขึ้นต้นด้วยตัวใหญ่
 function App() {
@@ -27,7 +28,7 @@ function App() {
     <>
       {isLogin ? 
         <Dashboard />
-       :  <BMI/>// Replace this with your login component if needed
+       :  <Login/>// Replace this with your login component if needed
       }
       {/* <Heading imgUrl="ABC" counter={counter}>
         Noew Counter = {counter}
