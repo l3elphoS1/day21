@@ -30,6 +30,7 @@ function bmi() {
     return (
         <>
           <div>This is BMI page</div>
+          <h1>{bmi}</h1>
           <form onSubmit={handleSubmit}>
             <label htmlFor="weight">weight:</label>
             <input
