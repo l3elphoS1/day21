@@ -22,20 +22,37 @@ function Login() {
   return (
     <div>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <input {...register('username')} type="text" id="username"/>
-        <input {...register('email')} type="text" id="email"/>
-        
-        <input {...register('password')} type="password" id="password"/>
-        <input {...register('confirmpassword')} type="password" id="confirmpassword"/>
-        <input {...register('firstname')} type="text" id="firstname"/>
-        <input {...register('lastname')} type="text" id="lastname"/>
+        <input
+          {...register("username")}
+          type="text"
+          id="username"
+          placeholder="user"
+        />
+        <input
+          {...register("email")}
+          type="text"
+          id="email"
+          placeholder="email"
+        />
 
-        
+        <input
+          {...register("password")}
+          type="password"
+          id="password"
+          placeholder="password"
+        />
+        <input
+          {...register("confirmpassword")}
+          type="password"
+          id="confirmpassword"
+        />
+        <input {...register("firstname")} type="text" id="firstname" />
+        <input {...register("lastname")} type="text" id="lastname" />
+
         <input type="submit" value="Submit" />
-       
       </form>
     </div>
-  )
+  );
 }
 
 export default Login
